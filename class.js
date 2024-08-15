@@ -12,3 +12,6 @@ class User {
 }
 const user1 = new User('André', 17, 1.61, 8);
 user1.introduce();
+
+const user2 = new User('João', 16, 1.80, 8);
+user2.introduce();
