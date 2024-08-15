@@ -1,13 +1,14 @@
 class User {
-    constructor(name, age, height){
+    constructor(name, age, height, tempo){
         this.name = name;
         this.age = age;
         this.height = height
+        this.tempo = tempo
     }
     introduce() {
         console.clear()
-        console.log(`Olá, meu nome é ${this.name} e tenho ${this.age} anos. Minha altura é ${this.height}`);
+        console.log(`Olá, meu nome é ${this.name} e tenho ${this.age} anos. Minha altura é ${this.height}, faço DS há ${this.tempo} meses.`);
     }
 }
-const User1 = new User('André', 17, 1.61);
-User1.introduce();
+const user1 = new User('André', 17, 1.61, 8);
+user1.introduce();
